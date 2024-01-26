@@ -14,7 +14,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "/usr/bin/micromamba shell init --shell bash --root-prefix=/opt/conda; git config pull.rebase false",
+	"postCreateCommand": "/usr/bin/micromamba shell init --shell bash --root-prefix=/opt/conda",
 
 
 	"customizations": {
@@ -24,7 +24,8 @@
 				"ms-toolsai.jupyter"
 			],
 			"settings": {
-				"python.terminal.executeInFileDir": true
+				"python.terminal.executeInFileDir": true,
+				"git.rebaseWhenSync": true
 			}
 		}
 	}
